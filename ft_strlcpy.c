@@ -6,11 +6,13 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:45:51 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/11 15:58:27 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:36:15 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 {
 	unsigned int	s;
 	unsigned int	i;

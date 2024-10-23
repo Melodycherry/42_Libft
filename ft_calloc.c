@@ -6,11 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:20:52 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/19 16:15:14 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:42:32 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 /*
 void	ft_bzero(void *s, size_t n)
 {

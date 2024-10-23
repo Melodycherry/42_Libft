@@ -6,11 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:53:07 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/17 16:18:28 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:43:41 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:08:39 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/22 18:23:46 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:38:15 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,18 @@ char	*ft_strjoin(char const	*s1, char const	*s2)
 	ft_strlcat(result, s2, len1 + len2 + 1);
 	return (result);
 }
+/*
+#include <stdio.h>
+
+int main()
+{
+	char	*s1;
+	char	*s2;
+	char	*joined_str;
+
+	s1 = "hello";
+	s2 = "world!";
+	joined_str = ft_strjoin(s1, s2);
+	if (joined_str == NULL)
+}
+*/

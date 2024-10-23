@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/10/23 16:54:37 by mlaffita          #+#    #+#              #
+#    Updated: 2024/10/23 16:55:46 by mlaffita         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 Library = libft
 
 files = ft_strlen \
@@ -26,10 +38,7 @@ files = ft_strlen \
          ft_substr \
          ft_strjoin \
          ft_strtrim \
-         ft_split \
-         ft_itoa \
-         ft_strmapi \
-         ft_striteri \
+		 ft_itoa \
          ft_putchar_fd \
          ft_putstr_fd \
          ft_putendl_fd \
@@ -47,7 +56,7 @@ NAME = $(OUTN)
 
 $(NAME):
 	$(Compiler) $(CmpFlags) -c $(CFILES) -I./
-	ar -rc $(OUTN) $(OFILES)
+	ar -rcs $(OUTN) $(OFILES)
 
 all: $(NAME)
 

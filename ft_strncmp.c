@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:25:23 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/11 16:55:52 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:44:34 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

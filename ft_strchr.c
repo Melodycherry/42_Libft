@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 16:07:37 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/16 15:20:35 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:43:53 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {

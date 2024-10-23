@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 15:45:07 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/15 16:05:23 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 14:41:41 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {

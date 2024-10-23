@@ -6,11 +6,13 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:21:12 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/10 16:21:33 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:04:45 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+int	ft_strlen(const char *str)
 {
 	int	len;
 
