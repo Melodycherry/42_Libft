@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:49:35 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 12:00:22 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/25 17:59:43 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 
 	start = 0;
-	if (!set || s1)
+	if (!set || !s1)
 		return (NULL);
 	while (s1[start] && ft_set(s1[start], set))
 		start++;

@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:26:17 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 16:05:09 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/25 18:18:47 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,18 @@ int	len(long nb)
 	return (len);
 }
 
+char	*ifzero(void)
+{
+	char	*str;
+
+	str = malloc(sizeof(char) * 2);
+	if (!str)
+		return (NULL);
+	str[0] = '0';
+	str[1] = '\0';
+	return (str);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -40,6 +52,8 @@ char	*ft_itoa(int n)
 
 	num = n;
 	i = len(num);
+	if (num == 0)
+		return (ifzero());
 	str = malloc(sizeof(char) * (i + 1));
 	if (!str)
 		return (NULL);
