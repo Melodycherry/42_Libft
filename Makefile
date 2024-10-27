@@ -6,7 +6,7 @@
 #    By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 16:54:37 by mlaffita          #+#    #+#              #
-#    Updated: 2024/10/26 16:02:23 by mlaffita         ###   ########.fr        #
+#    Updated: 2024/10/27 13:30:11 by mlaffita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,8 +50,8 @@ SOURCE = ft_strlen.c \
          ft_putendl_fd.c \
          ft_putnbr_fd.c \
 		 ft_striteri.c \
-		 ft_split.c \
 		 ft_strmapi.c \
+		 ft_split.c \
 
 OBJS = $(addprefix $(OBJDIR)/, $(SOURCE:.c=.o))
 

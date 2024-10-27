@@ -6,38 +6,23 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:20:52 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 14:42:32 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/27 15:33:34 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-void	ft_bzero(void *s, size_t n)
-{
-	char	*str;
 
-	str = (char *)s;
-	while (n--)
-		*str++ = '\0';
-}
-*/
 void	*ft_calloc(size_t count, size_t size)
 {
-	size_t	b;
-	void	*p;
+	size_t	i;
+	char	*str;
 
-	if (count == 0 || size == 0)
-	{
-		count = 1;
-		size = 1;
-	}
-	b = count * size;
-	p = malloc(b);
-	if (p == NULL)
+	i = count * size;
+	str = (char *)malloc(sizeof(char) * i);
+	if (str == NULL)
 		return (NULL);
-	else
-		ft_bzero(p, b);
-	return (p);
+	ft_bzero(str, i);
+	return (str);
 }
 /*
 #include <stdio.h>

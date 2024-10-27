@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:53:07 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 14:43:41 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/27 13:36:32 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
-	if (!dst || !src)
+	if (!dst && !src)
+		return (NULL);
+	if (len == 0 || dst == src)
 		return (dst);
 	if (src < dst)
 		while (len--)
