@@ -6,7 +6,7 @@
 #    By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 16:54:37 by mlaffita          #+#    #+#              #
-#    Updated: 2024/10/27 13:30:11 by mlaffita         ###   ########.fr        #
+#    Updated: 2024/10/29 13:13:42 by mlaffita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,18 @@ SOURCE = ft_strlen.c \
 		 ft_strmapi.c \
 		 ft_split.c \
 
+SRCBONUS = 	ft_lstnew_bonus.c \
+			ft_lstadd_front_bonus.c \
+			ft_lstsize_bonus.c \
+			ft_lstlast_bonus.c \
+			ft_lstadd_back_bonus.c \
+			ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c \
+			ft_lstiter_bonus.c \
+			ft_lstmap_bonus.c \
+
 OBJS = $(addprefix $(OBJDIR)/, $(SOURCE:.c=.o))
+OBJSBONUS = $(addprefix $(OBJDIR)/, $(SRCESBONUS:.c=.o))
 
 # Header file directory
 INCLUDES = -I .
@@ -69,6 +80,13 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@echo "Creating library $(NAME)..."
 	ar -rcs $(NAME) $(OBJS)
+	@echo "$(NAME) created successfully."
+
+# Rule to add bonus functions to libft.a
+bonus: $(OBJSBONUS)
+	@echo "Adding bonus functions to $(NAME)..."
+	ar -rcs $(NAME) $(OBJSBONUS)
+	@echo "Bonus functions added to $(NAME) successfully."
 
 # Compile each .c file to .o
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
