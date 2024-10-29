@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:55:56 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/27 15:13:38 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/29 13:28:58 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return (NULL);
-}		
+}
 /*
 #include <stdio.h>
 #include <string.h>

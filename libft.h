@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 21:55:38 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/29 13:17:50 by mlaffita         ###   ########.fr       */
+/*   Updated: 2024/10/29 13:37:30 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 // Part1
 int				ft_atoi(const char *str);

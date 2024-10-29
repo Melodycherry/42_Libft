@@ -6,7 +6,7 @@
 #    By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 16:54:37 by mlaffita          #+#    #+#              #
-#    Updated: 2024/10/29 13:13:42 by mlaffita         ###   ########.fr        #
+#    Updated: 2024/10/29 13:40:37 by mlaffita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,7 @@ SRCBONUS = 	ft_lstnew_bonus.c \
 			ft_lstmap_bonus.c \
 
 OBJS = $(addprefix $(OBJDIR)/, $(SOURCE:.c=.o))
-OBJSBONUS = $(addprefix $(OBJDIR)/, $(SRCESBONUS:.c=.o))
+OBJSBONUS = $(addprefix $(OBJDIR)/, $(SRCBONUS:.c=.o))
 
 # Header file directory
 INCLUDES = -I .
