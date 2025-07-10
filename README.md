@@ -55,3 +55,12 @@ Chaque fonction doit avoir le même comportement que sa version standard, mais �
 - `ft_lstsize` / `ft_lstlast` : infos sur la liste  
 - `ft_lstdelone` / `ft_lstclear` : supprime proprement des éléments  
 - `ft_lstiter` / `ft_lstmap` : itère ou transforme la liste
+
+
+---
+
+✅ **STATUT:**  
+📅 Date de rendu : 01.11.2024  
+📝 Note obtenue : 125/100
+
+---
