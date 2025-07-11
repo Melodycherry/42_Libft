@@ -14,7 +14,7 @@ Chaque fonction doit avoir le même comportement que sa version standard, mais �
 - `ft_isascii` : vérifie si le caractère est ASCII  
 - `ft_isprint` : vérifie si c’est un caractère imprimable
 
-### 🧱 Fonctions mémoire
+### 🧠  Fonctions mémoire
 - `ft_memset` : remplit une zone mémoire avec une valeur  
 - `ft_bzero` : met une zone mémoire à zéro  
 - `ft_memcpy` : copie une zone mémoire  
