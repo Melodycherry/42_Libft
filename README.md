@@ -1,6 +1,6 @@
 # 📚 Libft – Bibliothèque C
 
-## Objectif du projet
+## 🎯 Objectifs
 
 Ce projet a pour but de recréer en C une bibliothèque de fonctions usuelles.  
 Chaque fonction doit avoir le même comportement que sa version standard, mais être préfixée par `ft_`. Par exemple, `strlen` devient `ft_strlen`.
